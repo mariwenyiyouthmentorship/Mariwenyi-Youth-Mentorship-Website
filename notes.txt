@@ -1,0 +1,1 @@
+so the main issue that i can see here is the submitContactForm() function does not actually submit anything
