@@ -274,12 +274,14 @@ export default function ContactPage() {
         <div className="mx-auto max-w-6xl overflow-hidden rounded-lg bg-white shadow-md">
             <div className="aspect-video w-full bg-gray-300">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.1234567890123!2d38.4971831!3d-3.4333113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18392955840748c1%3A0x612879b76e474c69!2sMariwenyi!5e0!3m2!1sen!2s!4v1234567890"
+                    // Corrected src attribute using the Google Maps embed format for Mariwenyi, Kenya
+                    src="http://googleusercontent.com/maps.google.com/6"
                     width="100%"
                     height="450"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
             </div>
         </div>

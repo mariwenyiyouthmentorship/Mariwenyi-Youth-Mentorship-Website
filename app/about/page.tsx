@@ -161,7 +161,7 @@ export default function AboutPage() {
             <div className="rounded-lg bg-white p-6 shadow-md text-center">
               <div className="mx-auto mb-4 h-32 w-32 overflow-hidden rounded-full">
                 <Image
-                  src="/imgs/Dr Fred.jpg"
+                  src="/imgs/Dr Fred.png"
                   alt="Dr. F.M.K"
                   width={128}
                   height={128}
