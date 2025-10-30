@@ -1,8 +1,36 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import PartnersSlideshow from "@/components/partners-slideshow"
 
 export default function AboutPage() {
+    // Define partners data
+  const partners = [
+    {
+      id: 1,
+      name: "YONEP Youth Networking Program",
+      logo: "/YONEP_vector_logo.png",
+      description: "Supporting youth development initiatives",
+    },
+    {
+      id: 2,
+      name: "Grace Church Mbambarenyi",
+      logo: "/imgs/grace_church.png",
+      description: "Grace Church Mbambarenyi",
+    },
+    {
+      id: 3,
+      name: "ACK St. Titus Mariwenyi",
+      logo: "/imgs/ack-st.titus.png",
+      description: "ACK St. Titus Mariwenyi",
+    },
+    {
+      id: 4,
+      name: "PEFA Mariwenyi",
+      logo: "/imgs/pefa_mariwenyi.png",
+      description: "PEFA Mariwenyi Church",
+    },
+  ]
   return (
     <>
       {/* Hero Section */}
@@ -19,30 +47,30 @@ export default function AboutPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 md:items-center">
-            <div>
-              <h2 className="mb-6 text-3xl font-bold">Our Story</h2>
-              <p className="mb-4">
-                The Mariwenyi Youth Mentorship programme began in 2020 with the aim of imparting godly values and soft
-                skills to young people in Mariwenyi village in Taita Taveta County, Kenya. It began as a one-off event
-                which was held on December 26, 2020, with the theme, “Finishing Strong.” The first event was held in
-                partnership with the local churches: PEFA Mariwenyi, ACK St. Titus Mariwenyi, and Grace Ministries
-                Mbambarenyi. Since 2023, the event has been held every April and has expanded to include other
-                surrounding villages.
-              </p>
-              <p className="mb-4">
-                From 2023, a great need to support the youth being mentored came to light: a good number needed
-                financial support to stay in school, which was important for their future. A group of friends who were
-                part of the 2023 mentorship team came together to fundraise to keep bright and needy students in school.
-              </p>
-              <p className="mb-4">
-                Every year, the programme raises over KES 200,000 for the financial support and about KES 150,000 for
-                the Youth Event. New partners and well-wishers are welcome to partner in the initiative.
-              </p>
-              <p className="mb-4">Fredrick Mwazighe</p>
-            </div>
+<div>
+  <h2 className="mb-6 text-3xl font-bold">Our Story</h2>
+  <p className="mb-4" style={{ textAlign: 'justify' }}>
+    The Mariwenyi Youth Mentorship programme began in 2020 with the aim of imparting godly values and soft
+    skills to young people in Mariwenyi village in Taita Taveta County, Kenya. It began as a one-off event
+    which was held on December 26, 2020, with the theme, “Finishing Strong.” The first event was held in
+    partnership with the local churches: PEFA Mariwenyi, ACK St. Titus Mariwenyi, and Grace Ministries
+    Mbambarenyi. Since 2023, the event has been held every April and has expanded to include other
+    surrounding villages.
+  </p>
+ <p className="mb-4" style={{ textAlign: 'justify' }}>
+    From 2023, a great need to support the youth being mentored came to light: a good number needed
+    financial support to stay in school, which was important for their future. A group of friends who were
+    part of the 2023 mentorship team came together to fundraise to keep bright and needy students in school.
+  </p>
+  <p className="mb-4" style={{ textAlign: 'justify' }}>
+    Every year, the programme raises over KES 200,000 for the financial support and about KES 150,000 for
+    the Youth Event. New partners and well-wishers are welcome to partner in the initiative.
+  </p>
+  <p className="mb-4">Fredrick Mwazighe</p>
+</div>
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/imgs/imgs29.jpg"
+                src="/imgs/Our team.png"
                 alt="Founder with students"
                 width={600}
                 height={400}
@@ -133,7 +161,7 @@ export default function AboutPage() {
             <div className="rounded-lg bg-white p-6 shadow-md text-center">
               <div className="mx-auto mb-4 h-32 w-32 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=128&width=128"
+                  src="/imgs/Dr Fred.jpg"
                   alt="Dr. F.M.K"
                   width={128}
                   height={128}
@@ -150,7 +178,7 @@ export default function AboutPage() {
             <div className="rounded-lg bg-white p-6 shadow-md text-center">
               <div className="mx-auto mb-4 h-32 w-32 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=128&width=128"
+                  src="/imgs/Ana.jpg"
                   alt="Team Member"
                   width={128}
                   height={128}
@@ -167,7 +195,7 @@ export default function AboutPage() {
             <div className="rounded-lg bg-white p-6 shadow-md text-center">
               <div className="mx-auto mb-4 h-32 w-32 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=128&width=128"
+                  src="/imgs/Erica.jpg"
                   alt="Team Member"
                   width={128}
                   height={128}
@@ -184,7 +212,7 @@ export default function AboutPage() {
             <div className="rounded-lg bg-white p-6 shadow-md text-center">
               <div className="mx-auto mb-4 h-32 w-32 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=128&width=128"
+                  src="/imgs/Pam.jpg"
                   alt="Team Member"
                   width={128}
                   height={128}
@@ -200,7 +228,7 @@ export default function AboutPage() {
             <div className="rounded-lg bg-white p-6 shadow-md text-center">
               <div className="mx-auto mb-4 h-32 w-32 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=128&width=128"
+                  src="/imgs/Czar.jpg"
                   alt="Team Member"
                   width={128}
                   height={128}
@@ -217,7 +245,7 @@ export default function AboutPage() {
             <div className="rounded-lg bg-white p-6 shadow-md text-center">
               <div className="mx-auto mb-4 h-32 w-32 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=128&width=128"
+                  src="/imgs/Jim.png"
                   alt="Team Member"
                   width={128}
                   height={128}
@@ -235,43 +263,26 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Partners */}
-      <section className="py-16">
+      {/* Partners - Enhanced with Modern Design */}
+      <section className="relative py-32 overflow-hidden bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="mb-12 text-center text-3xl font-bold">Our Partners</h2>
-          <div className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="rounded-lg border p-6 text-center">
-              <Image
-                src="/placeholder.svg?height=100&width=200"
-                alt="YONEP Logo"
-                width={200}
-                height={100}
-                className="mx-auto mb-4"
-              />
-              <h3 className="text-xl font-bold">YONEP</h3>
-              <p className="mt-2">Youth Networking Program</p>
-            </div>
-            <div className="rounded-lg border p-6 text-center">
-              <Image
-                src="/placeholder.svg?height=100&width=200"
-                alt="Partner Logo"
-                width={200}
-                height={100}
-                className="mx-auto mb-4"
-              />
-              <h3 className="text-xl font-bold">Partner Organization</h3>
-              <p className="mt-2">Supporting our mission</p>
-            </div>
-            <div className="rounded-lg border p-6 text-center">
-              <Image
-                src="/placeholder.svg?height=100&width=200"
-                alt="Partner Logo"
-                width={200}
-                height={100}
-                className="mx-auto mb-4"
-              />
-              <h3 className="text-xl font-bold">Partner Organization</h3>
-              <p className="mt-2">Supporting our mission</p>
+          <div className="max-w-7xl mx-auto text-center">
+            <h2 className="text-5xl md:text-7xl font-bold text-gray-900 mb-10 leading-tight">
+              Our{" "}
+              <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+                Partners
+              </span>
+            </h2>
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto mb-20 font-light">
+              We work with amazing organizations that share our vision of empowering youth through education and
+              mentorship
+            </p>
+
+            <div className="relative">
+              <div className="absolute -inset-8 bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-3xl blur-3xl"></div>
+              <div className="relative">
+                <PartnersSlideshow partners={partners} />
+              </div>
             </div>
           </div>
         </div>

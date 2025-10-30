@@ -45,10 +45,10 @@ export default function DonatePage() {
                   <div>
                     <p className="font-medium">Email for Bank Details:</p>
                     <a
-                      href="mailto:fmwazighe@gmail.com"
+                      href="mailto:mariwenyiyouthmentorship@gmail.com"
                       className="flex items-center gap-2 text-blue-600 hover:underline"
                     >
-                      <Mail className="h-4 w-4" /> fmwazighe@gmail.com
+                      <Mail className="h-4 w-4" /> mariwenyiyouthmentorship@gmail.com
                     </a>
                   </div>
                   <div>

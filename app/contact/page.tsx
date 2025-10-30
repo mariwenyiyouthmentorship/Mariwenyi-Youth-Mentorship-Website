@@ -265,24 +265,26 @@ export default function ContactPage() {
                 </div>
             </section>
 
-            {/* Map Section */}
-            <section className="bg-gray-100 py-16">
-                <div className="container mx-auto px-4">
-                    <h2 className="mb-8 text-center text-3xl font-bold">
-                        Our Location
-                    </h2>
-                    <div className="mx-auto max-w-6xl overflow-hidden rounded-lg bg-white shadow-md">
-                        <div className="aspect-video w-full bg-gray-300">
-                            {/* In a real implementation, you would embed a Google Map here */}
-                            <div className="flex h-full items-center justify-center">
-                                <p className="text-gray-500">
-                                    Map will be displayed here
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+{/* Map Section */}
+<section className="bg-gray-100 py-16">
+    <div className="container mx-auto px-4">
+        <h2 className="mb-8 text-center text-3xl font-bold">
+            Our Location
+        </h2>
+        <div className="mx-auto max-w-6xl overflow-hidden rounded-lg bg-white shadow-md">
+            <div className="aspect-video w-full bg-gray-300">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.1234567890123!2d38.4971831!3d-3.4333113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18392955840748c1%3A0x612879b76e474c69!2sMariwenyi!5e0!3m2!1sen!2s!4v1234567890"
+                    width="100%"
+                    height="450"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                ></iframe>
+            </div>
+        </div>
+    </div>
+</section>
 
             {/* CTA Section */}
             <section className="bg-orange-500 py-16 text-white">

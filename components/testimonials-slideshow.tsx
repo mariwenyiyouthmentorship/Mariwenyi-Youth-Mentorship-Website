@@ -101,7 +101,7 @@ export default function TestimonialsSlideshow({
 
   if (validTestimonials.length === 0) {
     return (
-      <div className="flex items-center justify-center bg-gray-200 rounded-3xl p-12">
+      <div className="flex items-center justify-center bg-gray-200 rounded-3xl p-8">
         <p className="text-gray-500">No testimonials available</p>
       </div>
     )

@@ -38,66 +38,87 @@ export default function HomePage() {
     "/imgs/slideshow6.jpg",
   ]
 
-  // Define testimonials data
-  const testimonials = [
-    {
-      id: 3,
-      name: "Said Hiribai Julius",
-      role: "Current Student",
-      year: "Form 3",
-      quote:
-        "Being part of this program has opened doors I never imagined. The support goes beyond financial - they truly care about our holistic development and future success.",
-      image: "/placeholder.svg?height=80&width=80",
-      rating: 5,
-    },
-    {
-      id: 4,
-      name: "More Testimonials",
-      role: "Alumni",
-      year: "Class of 2024",
-      quote:
-        "The Christian values and life skills I learned through this program have been invaluable. I'm now a teacher, inspiring the next generation just as I was inspired.",
-      image: "/placeholder.svg?height=80&width=80",
-      rating: 5,
-    },
-  ]
+// Define testimonials data
+const testimonials = [
+  {
+    id: 3,
+    name: "Said Hiribai Julius",
+    role: "Current Student",
+    year: "Form 3",
+    quote:
+      "Being part of this program has opened doors I never imagined. The support goes beyond financial - they truly care about our holistic development and future success.",
+    image: "/imgs/student 2.jpg",
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: "Florence Mghoi",
+    role: "Alumni",
+    year: "Class of 2024",
+    quote:
+      "I'm Florence Mghoi, one of the Mariwenyi mentees and I'd like to share how this mentorship helped me. The  mentorship helped me gain clarity in setting SMART goals, strengthened my discipline, and reminded me to prioritize God’s purpose for my life. I learned to use my time wisely, make healthy choices, and protect my vision from negative influences. Overall, it encouraged me to stay focused, trust God’s timing, and work consistently toward success as I pursue my nursing career.",
+    image: "/imgs/student 1.jpg",
+    rating: 5,
+  },
+]
 
   // Define media items for the program showcase
   const mediaItems = [
     {
       id: 1,
       type: "image" as const,
-      src: "/imgs/imgs29.jpg",
-      title: "Students in Action",
-      description: "Our mentorship program in progress",
+      src: "/imgs/student 1.jpg",
+      title: "Alumni Success",
+      description: "A Successful mentee of MYM",
     },
     {
       id: 2,
       type: "video" as const,
-      src: "/placeholder.mp4",
+      src: "/imgs/student 1 video.mp4",
       title: "Program Overview",
       description: "Watch our students share their experiences",
     },
     {
       id: 3,
       type: "image" as const,
-      src: "/imgs/slideshow1.jpg",
+      src: "/imgs/student 2.jpg",
       title: "Community Engagement",
       description: "Students participating in community activities",
     },
     {
       id: 4,
       type: "image" as const,
-      src: "/imgs/slideshow2.jpg",
-      title: "Academic Excellence",
+      src: "/imgs/imgs6.jpg",
+      title: "Leading by example",
       description: "Celebrating academic achievements",
     },
     {
       id: 5,
       type: "video" as const,
-      src: "/placeholder.mp4",
-      title: "Success Stories",
-      description: "Hear from our graduates",
+      src: "/imgs/imgs3.jpg",
+      title: "MYM 2025 Sessions",
+      description: "Hear from our mentors",
+    },
+       {
+      id: 6,
+      type: "image" as const,
+      src: "/imgs/imgs14.jpg",
+  title: "Youth conference",
+      description: "Brainstorming sessions",
+    },
+       {
+      id: 7,
+      type: "image" as const,
+      src: "/imgs/imgs15.jpg",
+   title: "Youth conference",
+      description: "Brainstorming sessions",
+    },
+       {
+      id: 8,
+      type: "image" as const,
+      src: "/imgs/imgs16.jpg",
+      title: "Youth conference",
+      description: "Brainstorming sessions",
     },
   ]
 
@@ -112,19 +133,19 @@ export default function HomePage() {
     {
       id: 2,
       name: "Grace Church Mbambarenyi",
-      logo: "/placeholder.svg?height=100&width=200",
+      logo: "/imgs/grace_church.png",
       description: "Grace Church Mbambarenyi",
     },
     {
       id: 3,
       name: "ACK St. Titus Mariwenyi",
-      logo: "/placeholder.svg?height=100&width=200",
+      logo: "/imgs/ack-st.titus.png",
       description: "ACK St. Titus Mariwenyi",
     },
     {
       id: 4,
       name: "PEFA Mariwenyi",
-      logo: "/placeholder.svg?height=100&width=200",
+      logo: "/imgs/pefa_mariwenyi.png",
       description: "PEFA Mariwenyi Church",
     },
   ]
@@ -138,16 +159,9 @@ export default function HomePage() {
         </div>
 
         {/* Enhanced Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/80 z-5"></div>
-
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <div className="max-w-6xl mx-auto">
             {/* Trust Badge */}
-            <div className="mb-8 inline-flex items-center gap-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 px-8 py-4">
-              <Shield className="h-6 w-6 text-orange-400" />
-              <span className="text-lg font-semibold">Trusted by 200+ Families Since 2020</span>
-            </div>
-
             <h1 className="mb-8 text-5xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight">
               Building a Legacy of{" "}
               <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
