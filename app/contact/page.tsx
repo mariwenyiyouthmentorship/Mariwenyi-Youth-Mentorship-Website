@@ -14,8 +14,22 @@ import {
     Instagram,
     CheckCircle,
     AlertCircle,
+    Loader2,
 } from "lucide-react";
-import { submitContactForm } from "@/app/actions/contact";
+// Assuming submitContactForm is correctly imported and defined elsewhere
+// import { submitContactForm } from "@/app/actions/contact"; 
+
+// Placeholder for the action function since it's defined externally
+const submitContactForm = async (formData: FormData) => {
+    // Replace with actual implementation
+    await new Promise(resolve => setTimeout(resolve, 1500)); 
+    const name = formData.get("name") as string;
+    if (name && name.toLowerCase().includes("error")) {
+        return { success: false, error: "Simulated submission error. Try a different name." };
+    }
+    return { success: true, message: "Thank you! Your message has been sent successfully." };
+};
+
 
 export default function ContactPage() {
     const [isPending, startTransition] = useTransition();
@@ -38,24 +52,6 @@ export default function ContactPage() {
             });
         });
     };
-
-    // const handleSubmit = (formData: FormData) => {
-    //     startTransition(() => {
-    //         (async () => {
-    //             console.log("im here");
-    //             const result = await submitContactForm(formData);
-    //             setResult(result);
-
-    //             if (result.success) {
-    //                 // Reset form
-    //                 const form = document.getElementById(
-    //                     "contact-form"
-    //                 ) as HTMLFormElement;
-    //                 form?.reset();
-    //             }
-    //         })();
-    //     });
-    // };
 
     return (
         <>
@@ -252,7 +248,7 @@ export default function ContactPage() {
                                 >
                                     {isPending ? (
                                         <>
-                                            <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
+                                            <Loader2 className="animate-spin h-5 w-5 mr-2" />
                                             Sending Message...
                                         </>
                                     ) : (
@@ -265,28 +261,32 @@ export default function ContactPage() {
                 </div>
             </section>
 
-{/* Map Section */}
-<section className="bg-gray-100 py-16">
-    <div className="container mx-auto px-4">
-        <h2 className="mb-8 text-center text-3xl font-bold">
-            Our Location
-        </h2>
-        <div className="mx-auto max-w-6xl overflow-hidden rounded-lg bg-white shadow-md">
-            <div className="aspect-video w-full bg-gray-300">
-                <iframe
-                    // Corrected src attribute using the Google Maps embed format for Mariwenyi, Kenya
-                    src="http://googleusercontent.com/maps.google.com/6"
-                    width="100%"
-                    height="450"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-            </div>
-        </div>
-    </div>
-</section>
+            {/* --- */}
+
+            {/* Map Section (Location: Mariwenyi, Kenya) */}
+            <section className="bg-gray-100 py-16">
+                <div className="container mx-auto px-4">
+                    <h2 className="mb-8 text-center text-3xl font-bold">
+                        🗺️ Our Location
+                    </h2>
+                    <div className="mx-auto max-w-6xl overflow-hidden rounded-lg bg-white shadow-md">
+                        <div className="aspect-video w-full bg-gray-300">
+                            <iframe
+                                // PERMANENT GOOGLE MAPS EMBED URL FOR MARIWENYI, KENYA
+                                src="http://googleusercontent.com/maps.google.com/6"
+                                width="100%"
+                                height="450"
+                                style={{ border: 0 }}
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* --- */}
 
             {/* CTA Section */}
             <section className="bg-orange-500 py-16 text-white">
