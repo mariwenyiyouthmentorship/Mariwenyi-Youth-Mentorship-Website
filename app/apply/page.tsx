@@ -233,10 +233,10 @@ export default function ApplyPage() {
                         submission address:
                     </p>
                     <a
-                        href="mailto:applications@mym.org"
+                        href="mailto:mariwenyiyouthmentorship@gmail.com"
                         className="font-mono text-blue-600 hover:underline"
                     >
-                        applications@mym.org
+                        mariwenyiyouthmentorship@gmail.com
                     </a>
                     <p className="text-sm text-gray-500 mt-1">
                         **Subject Line:** [Student Name] - Scholarship Application
