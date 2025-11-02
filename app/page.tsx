@@ -162,6 +162,7 @@ const testimonials = [
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <div className="max-w-6xl mx-auto">
             {/* Trust Badge */}
+            <p className="mb-2 text-lg font-medium">High school busaries for Mariwenyi Village</p>
             <h1 className="mb-8 text-5xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight">
               Building a Legacy of{" "}
               <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
