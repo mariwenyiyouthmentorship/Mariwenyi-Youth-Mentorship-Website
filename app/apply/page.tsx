@@ -150,7 +150,7 @@ export default function ApplyPage() {
         </div>
     );
 
-    const OnlineForm = () => (
+const OnlineForm = () => (
         <Card>
             <CardHeader>
                 <CardTitle>Online Scholarship Application</CardTitle>
@@ -158,11 +158,13 @@ export default function ApplyPage() {
                     Fill out the Google Form below to apply for a scholarship.
                 </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="p-0 sm:p-6"> {/* Remove padding if desired for full width iframe */}
                 <iframe
                     src="https://docs.google.com/forms/d/e/1FAIpQLScAVp2FvTrmJ4VTLR9txEG6vllV3vsCSYEAlhTz9WURdlAOGg/viewform?embedded=true"
                     width="100%"
-                    height="1975"
+                    // Removed the fixed height="1975"
+                    // Use CSS classes for a large, responsive height instead
+                    className="w-full h-[1500px] sm:h-[1800px] lg:h-[2000px] min-h-[1000px] border-0"
                     frameBorder="0"
                     marginHeight={0}
                     marginWidth={0}
@@ -170,17 +172,18 @@ export default function ApplyPage() {
                 >
                     Loading…
                 </iframe>
-                <Button
-                    onClick={() => setApplicationMethod(null)}
-                    variant="link"
-                    className="mt-4"
-                >
-                    &larr; Back to Application Options
-                </Button>
+                <div className="p-4 sm:p-0"> {/* Add padding back for the button if CardContent was set to p-0 */}
+                    <Button
+                        onClick={() => setApplicationMethod(null)}
+                        variant="link"
+                        className="mt-4"
+                    >
+                        &larr; Back to Application Options
+                    </Button>
+                </div>
             </CardContent>
         </Card>
     );
-
     const DownloadFormInstructions = () => (
         <Card>
             <CardHeader>
