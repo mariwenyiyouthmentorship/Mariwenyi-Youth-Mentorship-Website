@@ -49,24 +49,32 @@ export default function AboutPage() {
           <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 md:items-center">
 <div>
   <h2 className="mb-6 text-3xl font-bold">Our Story</h2>
-  <p className="mb-4" style={{ textAlign: 'justify' }}>
-    The Mariwenyi Youth Mentorship programme began in 2020 with the aim of imparting godly values and soft
-    skills to young people in Mariwenyi village in Taita Taveta County, Kenya. It began as a one-off event
-    which was held on December 26, 2020, with the theme, “Finishing Strong.” The first event was held in
-    partnership with the local churches: PEFA Mariwenyi, ACK St. Titus Mariwenyi, and Grace Ministries
-    Mbambarenyi. Since 2023, the event has been held every April and has expanded to include other
-    surrounding villages.
-  </p>
+    
+    <p className="mb-4" style={{ textAlign: 'justify' }}>
+    Mariwenyi village, a community in Taita-Taveta County, Kenya, is located near the town of Voi and Mwatate sub-county. 
+    Its youthful population possesses immense potential and is eager to contribute to the community's growth, 
+    especially through entrepreneurship. However, financial constraints often hinder their ability to access 
+    post-primary and higher education—the critical gateway to skilled employment and business development.
+     </p>
+        <p className="mb-4" style={{ textAlign: 'justify' }}>
+        Recognizing this challenge from his own experience as a needy student, Dr. Fredrick Mwazighe sought to 
+        give back and help struggling students from his village by implementing strategic bursaries and sponsorships through
+        Mariwenyi Youth Mentorship programme. What began as a single event in 2020, initially focused on imparting godly values and soft skills, has since 
+        grown into an impactful annual program held every April, which has also expanded its outreach to surrounding villages.
+  
+     </p>
  <p className="mb-4" style={{ textAlign: 'justify' }}>
-    From 2023, a great need to support the youth being mentored came to light: a good number needed
+   The first event was held in partnership with the local churches: PEFA Mariwenyi, ACK St. Titus Mariwenyi, and Grace Ministries
+    Mbambarenyi. Since 2023, the event has been held every April and has expanded to include other surrounding villages.
+     From 2023, a great need to support the youth being mentored came to light: a good number needed
     financial support to stay in school, which was important for their future. A group of friends who were
     part of the 2023 mentorship team came together to fundraise to keep bright and needy students in school.
   </p>
   <p className="mb-4" style={{ textAlign: 'justify' }}>
-    Every year, the programme raises over KES 200,000 for the financial support and about KES 150,000 for
+    Every year, the programme raises over KES 200,000 for the financial support of Mariwenyi students and about KES 100,000 for
     the Youth Event. New partners and well-wishers are welcome to partner in the initiative.
   </p>
-  <p className="mb-4">Fredrick Mwazighe</p>
+  <p className="mb-4">Dr. Fredrick Mwazighe</p>
 </div>
             <div className="rounded-lg overflow-hidden">
               <Image
@@ -88,7 +96,7 @@ export default function AboutPage() {
             <div className="mb-12 text-center">
               <h2 className="mb-6 text-3xl font-bold">Our Foundation</h2>
               <p className="mx-auto max-w-3xl text-lg text-gray-600">
-                Our vision and mission guide everything we do in mentoring and supporting young people in their journey
+                Our vision and mission guide everything we do in mentoring and supporting young people of Mariwenyi Village in their journey
                 toward excellence and godly character.
               </p>
             </div>
@@ -274,7 +282,7 @@ export default function AboutPage() {
               </span>
             </h2>
             <p className="text-2xl text-gray-600 max-w-4xl mx-auto mb-20 font-light">
-              We work with amazing organizations that share our vision of empowering youth through education and
+              We work with amazing organizations that share our vision of empowering the youth in Mariwenyi Village through education and
               mentorship
             </p>
 
@@ -293,7 +301,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="mb-6 text-3xl font-bold">Join Our Mission</h2>
           <p className="mx-auto mb-8 max-w-2xl text-lg">
-            Help us continue to provide education and mentorship to bright but needy students. Your support makes a
+            Help us continue to provide education and mentorship to bright but needy students in Mariwenyi Village. Your support makes a
             difference.
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
