@@ -63,15 +63,13 @@ const Header = () => {
                 </nav>
 
                 <div className="flex items-center gap-4">
-                    <Link href="/apply">
-                        <Button
-                          size="lg"
-                              className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-10 py-6 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-white/20"
-                                    >
-                              Apply for Scholarship
-                              <ArrowRight className="ml-3 h-6 w-6" />
-                            </Button>
-                          </Link>
+                <Link href="/apply">
+                  <Button
+                   className="hidden bg-orange-500 hover:bg-orange-600 md:inline-flex"">
+                    Apply for Scholarship
+                  <ArrowRight className="ml-3 h-6 w-6" />
+                 </Button>
+               </Link>
 
                     {/* Mobile Menu Button */}
                     <button
