@@ -93,10 +93,10 @@ export default function ApplyPage() {
     const ApplicationChoices = () => (
         <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-center text-gray-700">
-                Choose Your Application Method
+                Please select a method of application
             </h3>
             <p className="text-center text-gray-500 mb-8">
-                Select the option that works best for you. Both methods are
+                Select the option that is most suitable for you. Both methods are
                 equally considered.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
