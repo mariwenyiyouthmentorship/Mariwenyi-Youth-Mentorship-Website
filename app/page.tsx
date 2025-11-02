@@ -483,7 +483,7 @@ const testimonials = [
                       date: "January 15, 2025",
                       title: "2026 Scholarship Applications Now Open",
                       description:
-                        "We're accepting applications for our 2025 scholarship program. Apply before March 31st.",
+                        "We're accepting applications for our 2026 scholarship program. Apply before December 31st this year.",
                     },
                     {
                       badge: "Event",
