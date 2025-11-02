@@ -14,11 +14,22 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
-import { Download, Upload, CheckCircle, AlertCircle } from "lucide-react";
+import {
+    Download,
+    Mail,
+    FormInput,
+    CheckCircle,
+    AlertCircle,
+} from "lucide-react";
 import { submitScholarshipApplication } from "@/app/actions/scholarship";
+
+// Define a new type for the choice between online/download
+type ApplicationMethod = "online" | "download" | null;
 
 export default function ApplyPage() {
     const [activeTab, setActiveTab] = useState("details");
+    const [applicationMethod, setApplicationMethod] =
+        useState<ApplicationMethod>(null); // State to manage the user's choice
     const [isPending, startTransition] = useTransition();
     const [result, setResult] = useState<{
         success: boolean;
@@ -75,6 +86,185 @@ export default function ApplyPage() {
                 }
             })();
         });
+    };
+
+    // --- Components for Application Choices ---
+
+    const ApplicationChoices = () => (
+        <div className="space-y-6">
+            <h3 className="text-2xl font-semibold text-center text-gray-700">
+                Choose Your Application Method
+            </h3>
+            <p className="text-center text-gray-500 mb-8">
+                Select the option that works best for you. Both methods are
+                equally considered.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Option 1: Online Form */}
+                <Card
+                    className="cursor-pointer hover:shadow-lg transition duration-300 border-blue-500/50"
+                    onClick={() => setApplicationMethod("online")}
+                >
+                    <CardHeader className="text-center">
+                        <FormInput className="h-10 w-10 text-blue-600 mx-auto mb-2" />
+                        <CardTitle>Option 1: Fill Online Form</CardTitle>
+                        <CardDescription>
+                            Complete the application directly via Google Forms.
+                            Requires an active internet connection.
+                        </CardDescription>
+                    </CardHeader>
+                    <CardContent className="text-center">
+                        <Button
+                            type="button"
+                            className="w-full bg-blue-600 hover:bg-blue-700"
+                        >
+                            Start Online Application
+                        </Button>
+                    </CardContent>
+                </Card>
+
+                {/* Option 2: Download & Email */}
+                <Card
+                    className="cursor-pointer hover:shadow-lg transition duration-300 border-green-500/50"
+                    onClick={() => setApplicationMethod("download")}
+                >
+                    <CardHeader className="text-center">
+                        <Download className="h-10 w-10 text-green-600 mx-auto mb-2" />
+                        <CardTitle>Option 2: Download & Submit</CardTitle>
+                        <CardDescription>
+                            Download the PDF, fill it out offline, and email the
+                            scanned copy to us.
+                        </CardDescription>
+                    </CardHeader>
+                    <CardContent className="text-center">
+                        <Button
+                            type="button"
+                            variant="outline"
+                            className="w-full border-green-600 text-green-600 hover:bg-green-50"
+                        >
+                            View Download Instructions
+                        </Button>
+                    </CardContent>
+                </Card>
+            </div>
+        </div>
+    );
+
+    const OnlineForm = () => (
+        <Card>
+            <CardHeader>
+                <CardTitle>Online Scholarship Application</CardTitle>
+                <CardDescription>
+                    Fill out the Google Form below to apply for a scholarship.
+                </CardDescription>
+            </CardHeader>
+            <CardContent>
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScAVp2FvTrmJ4VTLR9txEG6vllV3vsCSYEAlhTz9WURdlAOGg/viewform?embedded=true"
+                    width="100%"
+                    height="1975"
+                    frameBorder="0"
+                    marginHeight={0}
+                    marginWidth={0}
+                    title="Scholarship Application Form"
+                >
+                    Loading…
+                </iframe>
+                <Button
+                    onClick={() => setApplicationMethod(null)}
+                    variant="link"
+                    className="mt-4"
+                >
+                    &larr; Back to Application Options
+                </Button>
+            </CardContent>
+        </Card>
+    );
+
+    const DownloadFormInstructions = () => (
+        <Card>
+            <CardHeader>
+                <CardTitle>Download & Email Application</CardTitle>
+                <CardDescription>
+                    Follow the steps below to complete your application offline.
+                </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-6">
+                <div className="space-y-3">
+                    <h4 className="text-lg font-semibold flex items-center gap-2">
+                        <Download className="h-5 w-5 text-blue-600" /> Step 1:
+                        Download the Form
+                    </h4>
+                    <p>
+                        Click the button below to download the official PDF
+                        application form.
+                    </p>
+                    <a href="/uploads/general/form.pdf" download>
+                        <Button
+                            type="button"
+                            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700"
+                        >
+                            <Download className="h-4 w-4" /> Download Application
+                            Form (PDF)
+                        </Button>
+                    </a>
+                </div>
+
+                <div className="space-y-3">
+                    <h4 className="text-lg font-semibold flex items-center gap-2">
+                        <FormInput className="h-5 w-5 text-blue-600" /> Step 2:
+                        Fill Out and Scan
+                    </h4>
+                    <p>
+                        Print the downloaded PDF form, fill it out completely,
+                        and ensure all required documents are attached. Then,
+                        scan the completed form and documents into a single PDF
+                        file.
+                    </p>
+                </div>
+
+                <div className="space-y-3">
+                    <h4 className="text-lg font-semibold flex items-center gap-2">
+                        <Mail className="h-5 w-5 text-blue-600" /> Step 3: Email
+                        Submission
+                    </h4>
+                    <p>
+                        Email the final scanned PDF document to our application
+                        submission address:
+                    </p>
+                    <a
+                        href="mailto:applications@mym.org"
+                        className="font-mono text-blue-600 hover:underline"
+                    >
+                        applications@mym.org
+                    </a>
+                    <p className="text-sm text-gray-500 mt-1">
+                        **Subject Line:** [Student Name] - Scholarship Application
+                    </p>
+                </div>
+
+                <Button
+                    onClick={() => setApplicationMethod(null)}
+                    variant="link"
+                >
+                    &larr; Back to Application Options
+                </Button>
+            </CardContent>
+        </Card>
+    );
+
+    // --- Main Render Function ---
+
+    const renderApplicationContent = () => {
+        switch (applicationMethod) {
+            case "online":
+                return <OnlineForm />;
+            case "download":
+                return <DownloadFormInstructions />;
+            case null:
+            default:
+                return <ApplicationChoices />;
+        }
     };
 
     return (
@@ -149,7 +339,7 @@ export default function ApplyPage() {
                             </TabsTrigger>
                         </TabsList>
 
-                        {/* Program Details Tab */}
+                        {/* Program Details Tab (Unchanged) */}
                         <TabsContent value="details">
                             <Card>
                                 <CardHeader>
@@ -229,31 +419,9 @@ export default function ApplyPage() {
                             </Card>
                         </TabsContent>
 
-                        {/* Application Form Tab */}
+                        {/* Application Form Tab (Modified) */}
                         <TabsContent value="application">
-                            <Card>
-                                <CardHeader>
-                                    <CardTitle>
-                                        Scholarship Application Form
-                                    </CardTitle>
-                                    <CardDescription>
-                                        Fill out the form below to apply for a
-                                        scholarship
-                                    </CardDescription>
-                                </CardHeader>
-                                <CardContent>
-                                    <iframe
-                                        src="https://docs.google.com/forms/d/e/1FAIpQLScAVp2FvTrmJ4VTLR9txEG6vllV3vsCSYEAlhTz9WURdlAOGg/viewform?embedded=true"
-                                        width="100%"
-                                        height="1975"
-                                        frameBorder="0"
-                                        marginHeight={0}
-                                        marginWidth={0}
-                                    >
-                                        Loading…
-                                    </iframe>
-                                </CardContent>
-                            </Card>
+                            {renderApplicationContent()}
                         </TabsContent>
                     </Tabs>
                 </div>
