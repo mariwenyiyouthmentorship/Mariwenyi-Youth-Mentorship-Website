@@ -162,9 +162,8 @@ const OnlineForm = () => (
                 <iframe
                     src="https://docs.google.com/forms/d/e/1FAIpQLScAVp2FvTrmJ4VTLR9txEG6vllV3vsCSYEAlhTz9WURdlAOGg/viewform?embedded=true"
                     width="100%"
-                    // Removed the fixed height="1975"
-                    // Use CSS classes for a large, responsive height instead
-                    className="w-full h-[1500px] sm:h-[1800px] lg:h-[2000px] min-h-[1000px] border-0"
+                    className="w-full border-0"
+                    style={{ height: '400px' }}
                     frameBorder="0"
                     marginHeight={0}
                     marginWidth={0}

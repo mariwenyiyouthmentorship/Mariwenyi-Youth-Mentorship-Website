@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 
@@ -62,14 +62,13 @@ const Header = () => {
                     ))}
                 </nav>
 
-                <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4">
                 <Link href="/apply">
-                  <Button
-                   className="hidden bg-orange-500 hover:bg-orange-600 md:inline-flex"">
-                    Apply for Scholarship
-                  <ArrowRight className="ml-3 h-6 w-6" />
-                 </Button>
-               </Link>
+                    <Button className="hidden bg-orange-500 hover:bg-orange-600 md:inline-flex">
+                        Apply for Scholarship
+                        <ArrowRight className="ml-3 h-6 w-6" />
+                    </Button>
+                </Link>
 
                     {/* Mobile Menu Button */}
                     <button
