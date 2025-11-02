@@ -189,14 +189,16 @@ const testimonials = [
                 </Button>
               </Link>
 
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-white/40 bg-white/10 backdrop-blur-md text-white hover:bg-white/20 px-10 py-6 text-xl font-semibold rounded-full"
-              >
-                <Play className="mr-3 h-6 w-6" />
-                Watch Our Story
-              </Button>
+              <a href="#media-showcase">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-white/40 bg-white/10 backdrop-blur-md text-white hover:bg-white/20 px-10 py-6 text-xl font-semibold rounded-full"
+                >
+                  <Play className="mr-3 h-6 w-6" />
+                  Watch Our Story
+                </Button>
+              </a>
             </div>
 
             {/* Enhanced Stats with Icons */}
@@ -295,7 +297,7 @@ const testimonials = [
                 ))}
               </div>
 
-              <div className="relative">
+              <div id="media-showcase" className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-3xl opacity-20 blur-xl"></div>
                 <div className="relative">
                   <MediaSlideshow mediaItems={mediaItems} height="600px" />
