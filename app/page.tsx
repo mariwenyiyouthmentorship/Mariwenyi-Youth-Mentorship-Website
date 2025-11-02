@@ -731,7 +731,7 @@ const testimonials = [
             <h2 className="text-5xl md:text-7xl font-bold mb-10 leading-tight">
               Help Us Make a{" "}
               <span className="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                Difference in Mariwenyi Villge
+                Difference in Mariwenyi
               </span>
             </h2>
 
