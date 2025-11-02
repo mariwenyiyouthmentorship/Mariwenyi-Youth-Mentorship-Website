@@ -63,14 +63,12 @@ const Header = () => {
                 </nav>
 
                 <div className="flex items-center gap-4">
-                    <Link
-                        target="_blank"
-                        href="https://forms.gle/Q6npEm2N1iPYahWq5"
+                    <Button
+                        onClick={() => setActiveTab("application")}
+                        className="hidden bg-orange-500 hover:bg-orange-600 md:inline-flex"
                     >
-                        <Button className="hidden bg-orange-500 hover:bg-orange-600 md:inline-flex">
-                            Apply for Sponsorship →
-                        </Button>
-                    </Link>
+                        Apply for Sponsorship →
+                    </Button>
 
                     {/* Mobile Menu Button */}
                     <button
