@@ -410,7 +410,7 @@ const testimonials = [
               <h2 className="text-5xl md:text-7xl font-bold text-gray-900 mb-10 leading-tight">
                 Transforming Lives,{" "}
                 <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
-                  Creating Futures
+                  Creating a Future for Mariwenyi Village
                 </span>
               </h2>
               <p className="text-2xl text-gray-600 max-w-4xl mx-auto font-light">
@@ -532,7 +532,7 @@ const testimonials = [
                   icon: Calendar,
                   title: "Upcoming Events",
                   subtitle: "Annual Youth Event 2026",
-                  detail: "April 2025",
+                  detail: "April 2026",
                   color: "from-blue-500 to-blue-600",
                   href: "#latest-announcements",
                 },
@@ -630,7 +630,7 @@ const testimonials = [
                     {
                       question: "Who Is Our Youth Mentorship Program Designed For?",
                       answer:
-                        "Our program is designed for bright and needy high school students who demonstrate academic potential (KCPE score of 300+ marks) and come from families with limited financial resources.",
+                        "Our program is designed for bright and needy high school students from Mariwenyi Village who demonstrate academic potential (KCPE score of 300+ marks) and come from families with limited financial resources.",
                     },
                     {
                       question: "What Areas Are Covered In Our Mentorship Program?",
@@ -676,12 +676,12 @@ const testimonials = [
                     {
                       question: "How Can I Get Involved As A Volunteer Or Mentor?",
                       answer:
-                        "We welcome volunteers and mentors who share our vision. You can get involved by contacting us through our website, participating in our annual events, or joining our fundraising efforts.",
+                        "We welcome volunteers and mentors from across the globe who share our vision. You can get involved by contacting us through our website, participating in our annual events, or joining our fundraising efforts.",
                     },
                     {
                       question: "Is Financial Assistance Available For The Program?",
                       answer:
-                        "Yes, financial assistance is the core of our program. We provide school fee support, educational materials, and other necessary resources. Our goal is to raise over KES 200,000 annually.",
+                        "Yes, financial assistance is the core of our program. We provide school fee support, educational materials, and other necessary resources for students in Mariwenyi and surrounding villages.",
                     },
                     {
                       question: "Can Students Participate While Attending Different Schools?",
@@ -731,7 +731,7 @@ const testimonials = [
             <h2 className="text-5xl md:text-7xl font-bold mb-10 leading-tight">
               Help Us Make a{" "}
               <span className="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                Difference
+                Difference in Mariwenyi Villge
               </span>
             </h2>
 
