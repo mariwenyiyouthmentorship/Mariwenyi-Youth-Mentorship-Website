@@ -150,7 +150,7 @@ export default function ContactPage() {
                                         <Twitter className="h-5 w-5" />
                                     </a>
                                     <a
-                                        href="#"
+                                        href="https://www.instagram.com/mariwenyi_youth_mentorship006/?igsh=eW90cWFjNWZmbDI1#"
                                         className="rounded-full bg-gray-200 p-3 text-blue-600 transition-colors hover:bg-blue-600 hover:text-white"
                                         aria-label="Instagram"
                                     >
