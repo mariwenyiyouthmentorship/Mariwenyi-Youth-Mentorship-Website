@@ -176,7 +176,7 @@ export default function AboutPage() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold">Dr. Fredrik M. Mwazighe</h3>
+              <h3 className="text-xl font-bold">Dr. Fredrick M. Mwazighe</h3>
               <p className="text-gray-600">Founder & Director</p>
               <p className="mt-4">
                 Passionate about education and mentorship, Dr. F.M.M brings his personal experience and vision to lead
