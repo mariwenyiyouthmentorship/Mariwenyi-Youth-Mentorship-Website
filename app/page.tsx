@@ -164,7 +164,7 @@ const testimonials = [
             {/* Trust Badge */}
             <div className="mb-8 inline-flex items-center gap-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 px-8 py-4">
               <Award className="h-6 w-6 text-orange-400" />
-              <span className="text-lg font-semibold">High school busaries for Mariwenyi Village</span>
+              <span className="text-lg font-semibold">High school bursaries for Mariwenyi Village</span>
             </div>
             <h1 className="mb-8 text-5xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight">
               Building a Legacy of{" "}
