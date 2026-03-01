@@ -99,21 +99,21 @@ const Footer = () => {
             </ul>
             <div className="mt-8 flex gap-4">
               <a
-                href="#"
+                href="https://www.facebook.com/mariwenyi.youth.mentorship.006/"
                 className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
                 aria-label="Facebook"
               >
                 <Facebook className="h-6 w-6" />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/mariwenyi.youth.mentorship.006/"
                 className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
                 aria-label="Twitter"
               >
                 <Twitter className="h-6 w-6" />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/mariwenyi.youth.mentorship.006/"
                 className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
                 aria-label="Instagram"
               >
