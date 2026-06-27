@@ -7,6 +7,17 @@ import { Card, CardContent } from "@/components/ui/card"
 export default function EventsPage() {
   const events = [
     {
+      year: "2026",
+      theme: "More Precious Than Many Sparrows",
+      details: "At Voi in April 2026, Dr. Mwazighe, Ms. Anastasia, and Mr. Caesar held one‑on‑one sessions with current mentees to review personal progress, provide encouragement, and share insights. The discussions also drew lessons from Dr. Mwazighe’s book \"More Precious Than Many Sparrows\", offering practical guidance and inspiration ahead of the annual mentorship gathering later in the year.",
+      images: [
+        "/imgs/1_2026.jpg",
+        "/imgs/2_2026.jpg",
+        "/imgs/3_2026.jpg",
+        "/imgs/4_2026.jpg",
+      ],
+    },
+    {
       year: "2025",
       theme: "You Were Bought at a Price",
       details: "Annual youth mentorship event at Mariwenyi Village in Voi, Kenya",
@@ -23,7 +34,6 @@ export default function EventsPage() {
         { src: "/imgs/imgs31.jpg", width: 450, height: 350 },
         { src: "/imgs/imgs32.jpg", width: 400, height: 300 },
         { src: "/imgs/imgs33.jpg", width: 300, height: 200 },
-   
       ],
     },
     {
@@ -67,7 +77,7 @@ export default function EventsPage() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="mb-6 text-4xl font-bold md:text-5xl">Our Events</h1>
           <p className="mx-auto mb-8 max-w-2xl text-lg">
-            We conduct annual mentorship events at Mariwenyi Village in Voi (Kenya) since 2020. These events are designed to
+            We conduct mentorship events at Mariwenyi Village in Voi (Kenya) since 2020. These events are designed to
             empower and inspire the youth in our community. Each year, we focus on a different theme that addresses the
             unique challenges and opportunities faced by young people today. Our events feature workshops, guest speakers,
             and interactive sessions that encourage personal growth, skill development, and community engagement.
@@ -78,8 +88,8 @@ export default function EventsPage() {
       {/* Events Tabs */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <Tabs defaultValue="2025" className="mx-auto max-w-6xl">
-            <TabsList className="mb-8 grid w-full grid-cols-4 md:grid-cols-4">
+          <Tabs defaultValue="2026" className="mx-auto max-w-6xl">
+            <TabsList className="mb-8 grid w-full grid-cols-5 md:grid-cols-5">
               {events.map((event) => (
                 <TabsTrigger key={event.year} value={event.year}>
                   {event.year}
@@ -131,7 +141,6 @@ export default function EventsPage() {
                                   height: "auto",
                                   maxHeight: "320px",
                                   objectFit: "contain",
-                                  //background: "#f3f4f6",
                                   borderRadius: "0.5rem",
                                   boxShadow: "0 1px 4px rgba(0,0,0,0.04)",
                                 }}
@@ -180,9 +189,9 @@ export default function EventsPage() {
         <div className="container mx-auto px-4">
           <h2 className="mb-12 text-center text-3xl font-bold">Upcoming Events</h2>
           <div className="mx-auto max-w-4xl rounded-lg bg-white p-8 shadow-md">
-            <h3 className="mb-4 text-2xl font-bold">Youth Mentorship Event 2026</h3>
+            <h3 className="mb-4 text-2xl font-bold">Youth Mentorship Event 2026/2027</h3>
             <p className="mb-6">
-              Planning is already underway for our next annual mentorship event. Stay tuned for more details about the
+              Planning is already underway for our next major mentorship gathering. Stay tuned for more details about the
               theme, speakers, and activities.
             </p>
             <div className="text-center">
