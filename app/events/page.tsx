@@ -11,10 +11,10 @@ export default function EventsPage() {
       theme: "More Precious Than Many Sparrows",
       details: "At Voi in April 2026, Dr. Mwazighe, Ms. Anastasia, and Mr. Caesar held one‑on‑one sessions with current mentees to review personal progress, provide encouragement, and share insights. The discussions also drew lessons from Dr. Mwazighe’s book \"More Precious Than Many Sparrows\", offering practical guidance and inspiration ahead of the annual mentorship gathering later in the year.",
       images: [
-        "/imgs/1_2026.jpg",
-        "/imgs/2_2026.jpg",
-        "/imgs/3_2026.jpg",
-        "/imgs/4_2026.jpg",
+        { src: "/imgs/1_2026.jpg", width: 300, height: 200 },
+        { src: "/imgs/2_2026.jpg", width: 300, height: 200 },
+        { src: "/imgs/3_2026.jpg", width: 300, height: 200 },
+        { src: "/imgs/4_2026.jpg", width: 300, height: 200 },
       ],
     },
     {
