@@ -106,10 +106,12 @@ export default function EventsPage() {
                       <div className="mx-auto mb-4 h-1 w-20 bg-purple-600"></div>
                       <p className="text-xl font-medium text-purple-600">Theme: {event.theme}</p>
                     </div>
-
+                    
                     <div className="mb-8">
                       <h3 className="mb-4 text-xl font-semibold">Event Details</h3>
+                      <h4 className="mb-2 text-md font-medium text-gray-700">Summary</h4>
                       <p className="mb-4">{event.details}</p>
+                      
                       <p>
                         During this event, we provided mentorship, guidance, and inspiration to youth from the local
                         community. The event featured workshops, motivational speakers, and networking opportunities for
