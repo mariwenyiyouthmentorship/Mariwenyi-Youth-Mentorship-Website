@@ -6,6 +6,17 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function EventsPage() {
   const events = [
+      {
+      year: "2026",
+      theme: "More Precious Than Many Sparrows,
+      details: "Mentor‑Mentee Alignment Session - 2026 April Event ",
+      images: [
+        { src: "/imgs/1_2026.jpg", width: 300, height: 200 },
+        { src: "/imgs/2_2026.jpg", width: 300, height: 200 },
+        { src: "/imgs/3_2026.jpg", width: 300, height: 200 },
+        { src: "/imgs/4_2026.jpg", width: 300, height: 200 },
+      ],
+    },
     {
       year: "2025",
       theme: "You Were Bought at a Price",
