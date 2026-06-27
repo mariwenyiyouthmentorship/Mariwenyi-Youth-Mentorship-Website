@@ -109,8 +109,8 @@ export default function EventsPage() {
                     
                     <div className="mb-8">
                       <h3 className="mb-4 text-xl font-semibold">Event Details</h3>
-                      <h4 className="mb-2 text-md font-medium text-gray-700">Summary</h4>
                       <p className="mb-4">{event.details}</p>
+                      <h3 className="mb-2 text-md font-medium text-gray-700 italic">Summary</h3>
                       
                       <p>
                         During this event, we provided mentorship, guidance, and inspiration to youth from the local
