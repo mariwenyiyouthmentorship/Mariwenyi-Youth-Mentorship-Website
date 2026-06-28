@@ -70,7 +70,7 @@ const Footer = () => {
           {/* Contact Information */}
           <div>
             <h3 className="mb-6 text-2xl font-bold text-gray-900">Contact Us</h3>
-            <ul className="space-y-4 text-gray-700">
+            <ul className="space-y-2 text-gray-700">
               <li className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
                   <Mail className="h-5 w-5 text-orange-600" />
@@ -88,6 +88,14 @@ const Footer = () => {
                 </div>
                 <a href="tel:+254729563362" className="hover:text-orange-600 transition-colors duration-300 text-lg">
                   +254 729 563 362
+                </a>
+              </li>
+              <li className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
+                  <Website className="h-5 w-5 text-orange-600" />
+                </div>
+                <a href="https://sites.google.com/uonbi.ac.ke/dr-fredrick-mwazighe/home" className="hover:text-orange-600 transition-colors duration-300 text-lg">
+                  Website: Dr. Fredrick Mwazighe
                 </a>
               </li>
               <li className="flex items-center gap-4">
