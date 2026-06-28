@@ -68,69 +68,71 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Information */}
-          <div>
-            <h3 className="mb-6 text-2xl font-bold text-gray-900">Contact Us</h3>
-            <ul className="space-y-2 text-gray-700">
-              <li className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
-                  <Mail className="h-5 w-5 text-orange-600" />
-                </div>
-                <a
-                  href="mailto:mariwenyiyouthmentorship@gmail.com"
-                  className="hover:text-orange-600 transition-colors duration-300 text-lg"
-                >
-                  mariwenyiyouthmentorship@gmail.com
-                </a>
-              </li>
-              <li className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
-                  <Phone className="h-5 w-5 text-orange-600" />
-                </div>
-                <a href="tel:+254729563362" className="hover:text-orange-600 transition-colors duration-300 text-lg">
-                  +254 729 563 362
-                </a>
-              </li>
-              <li className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
-                  {/* Changed <Website /> to <Globe /> */}
-                  <Globe className="h-5 w-5 text-orange-600" />
-                </div>
-                <a href="https://sites.google.com/uonbi.ac.ke/dr-fredrick-mwazighe/home" className="hover:text-orange-600 transition-colors duration-300 text-lg">
-                  Website: Dr. Fredrick Mwazighe
-                </a>
-              </li>
-              <li className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
-                  <MapPin className="h-5 w-5 text-orange-600" />
-                </div>
-                <span className="text-lg">Mariwenyi Village, Voi, Kenya</span>
-              </li>
-            </ul>
-            <div className="mt-8 flex gap-4">
-              <a
-                href="https://www.facebook.com/mariwenyi.youth.mentorship.006/"
-                className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a
-                href="https://www.facebook.com/mariwenyi.youth.mentorship.006/"
-                className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-6 w-6" />
-              </a>
-              <a
-                href="https://www.facebook.com/mariwenyi.youth.mentorship.006/"
-                className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-6 w-6" />
-              </a>
-            </div>
-          </div>
+{/* Contact Information */}
+<div>
+  <h3 className="mb-6 text-2xl font-bold text-gray-900">Contact Us</h3>
+  {/* Reduced from space-y-2 to space-y-1 for tighter list items */}
+  <ul className="space-y-1 text-gray-700">
+    <li className="flex items-center gap-4">
+      <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
+        <Mail className="h-5 w-5 text-orange-600" />
+      </div>
+      <a
+        href="mailto:mariwenyiyouthmentorship@gmail.com"
+        className="hover:text-orange-600 transition-colors duration-300 text-lg"
+      >
+        mariwenyiyouthmentorship@gmail.com
+      </a>
+    </li>
+    <li className="flex items-center gap-4">
+      <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
+        <Phone className="h-5 w-5 text-orange-600" />
+      </div>
+      <a href="tel:+254729563362" className="hover:text-orange-600 transition-colors duration-300 text-lg">
+        +254 729 563 362
+      </a>
+    </li>
+    <li className="flex items-center gap-4">
+      <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
+        <Globe className="h-5 w-5 text-orange-600" />
+      </div>
+      <a href="https://sites.google.com/uonbi.ac.ke/dr-fredrick-mwazighe/home" className="hover:text-orange-600 transition-colors duration-300 text-lg">
+        Website: Dr. Fredrick Mwazighe
+      </a>
+    </li>
+    <li className="flex items-center gap-4">
+      <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
+        <MapPin className="h-5 w-5 text-orange-600" />
+      </div>
+      <span className="text-lg">Mariwenyi Village, Voi, Kenya</span>
+    </li>
+  </ul>
+  
+  {/* Reduced margin-top from mt-8 to mt-4 to pull the social icons closer to the list */}
+  <div className="mt-4 flex gap-4">
+    <a
+      href="https://www.facebook.com/mariwenyi.youth.mentorship.006/"
+      className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
+      aria-label="Facebook"
+    >
+      <Facebook className="h-6 w-6" />
+    </a>
+    <a
+      href="https://www.facebook.com/mariwenyi.youth.mentorship.006/"
+      className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
+      aria-label="Twitter"
+    >
+      <Twitter className="h-6 w-6" />
+    </a>
+    <a
+      href="https://www.facebook.com/mariwenyi.youth.mentorship.006/"
+      className="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
+      aria-label="Instagram"
+    >
+      <Instagram className="h-6 w-6" />
+    </a>
+  </div>
+</div>
         </div>
 
         <div className="mt-16 border-t border-gray-300 pt-8 text-center text-gray-600">
