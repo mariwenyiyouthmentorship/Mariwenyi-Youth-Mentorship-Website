@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react"
+// Replaced Website with Globe inside the lucide-react imports
+import { Facebook, Instagram, Twitter, Mail, Phone, MapPin, Globe } from "lucide-react"
 
 const Footer = () => {
   return (
@@ -92,7 +93,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
-                  <Website className="h-5 w-5 text-orange-600" />
+                  {/* Changed <Website /> to <Globe /> */}
+                  <Globe className="h-5 w-5 text-orange-600" />
                 </div>
                 <a href="https://sites.google.com/uonbi.ac.ke/dr-fredrick-mwazighe/home" className="hover:text-orange-600 transition-colors duration-300 text-lg">
                   Website: Dr. Fredrick Mwazighe
